@@ -4,8 +4,11 @@ using System.Text;
 
 namespace Student
 {
-    class Lessons
+    public class Lessons
     {
+        public string Name { get; set; }
+        public string TeacherName { get; set; }
+        public int Duration { get; set; }
 
     }
 }

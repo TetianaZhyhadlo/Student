@@ -4,12 +4,16 @@ using System.Text;
 
 namespace Student
 {
-    public class Teacher
+    public class Teacher:Person
     {
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public int PhoneNumber { get; set; }
         public string Subject { get; set; }
-        public string Shcool { get; set; }
+        public string School { get; set; }
+        public override void ShowInfo()
+        {
+            base.ShowInfo();
+            Console.WriteLine($" {Subject}, {School} ");
+        }
+
     }
+   
 }
